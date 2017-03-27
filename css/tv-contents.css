@@ -1,0 +1,104 @@
+@import url('http://fonts.googleapis.com/css?family=Press+Start+2P|VT323');
+body {
+	font-family: Trebuchet, Helvetica, Verdana, Arial, sans-serif;
+	background-image: url('/images/resume-bg.gif');
+	overflow-x: hidden;
+	color: white;
+	text-align: center;
+	border-style: groove;
+	border-width: 8px;
+	border-color: #003366;
+}
+a:link, a:visited {
+	color: #3366cc;
+	text-decoration: underline;
+}
+a:active, a:hover {
+	color: #333333;
+}
+h1 {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 1.3rem;
+	color: white;
+	font-style: normal;
+	text-transform: uppercase;
+}
+h2 {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 1.0rem;
+	color: white;
+	font-style: normal;
+}
+h3 {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 0.8rem;
+	color: #993333;
+	font-style: italic;
+	margin-bottom: -10px;
+	line-height: 130%;
+}
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+ul li:before {
+	content: "⇒";
+	margin-right: 3px;
+}
+tr:not(:first-child) td {
+	font-size: 1.1rem;
+}
+tr:not(:first-child) td:first-child {
+	padding-right: 20px;
+}
+img {
+	width: 100%;
+}
+.content {
+	font-family: 'VT323', sans-serif;
+	font-size: 1.4rem;
+	vertical-align: baseline;
+	margin: auto;
+	width: 100%;
+	max-width: 600px;
+	alignment-baseline: middle;
+	color: #3366cc;
+	line-height: 110%;
+}
+section {
+	background-color: black;
+	border-style: groove;
+	border-width: 8px;
+	border-color: #003366;
+	padding: 20px;
+	margin: 20px;
+}
+#top,
+#bottom,
+#left,
+#right {
+	background: #003366;
+	position: fixed;
+}
+#left,
+#right {
+	top: 0; bottom: 0;
+	width: 8px;
+}
+#left {
+	left: 0;
+}
+#right {
+	right: 0;
+}
+#top,
+#bottom {
+	left: 0; right: 0;
+	height: 8px;
+}
+#top {
+	top: 0;
+}
+#bottom {
+	bottom: 0;
+}
