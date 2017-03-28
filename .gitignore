@@ -27,3 +27,6 @@ fbStyle.css
 parking-page.html
 php.ini
 robots.txt
+bower_components
+*/.DS_Store
+*.map

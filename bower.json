@@ -1,0 +1,23 @@
+{
+  "name": "pixel-shredder-dot-com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/pixelSHREDDER/pixel-shredder-dot-com",
+  "description": "Main website.",
+  "main": "index.html",
+  "authors": [
+    "Mike DeVine"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "grunt": "~1.0.1",
+    "grunt-contrib-sass": "^1.0.0"
+  }
+}

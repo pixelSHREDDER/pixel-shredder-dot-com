@@ -1,0 +1,160 @@
+body {
+	font-family: Trebuchet, Helvetica, Verdana, Arial, sans-serif;
+	font-weight: bold;
+	background-color: black;
+	background-size: cover;
+	color: white;
+	text-align: center;
+}
+
+a:link,
+a:visited {
+	color: #990000;
+	text-decoration: none;
+}
+
+a:active,
+a:hover {
+	color: #333333;
+}
+
+.header {
+	font-size: small;
+
+	span {
+		font-weight: bold;
+	}
+}
+
+.footer {
+	font-size: x-small;
+}
+
+.links {
+	font-size: x-large;
+}
+
+.content {
+	font-size: x-large;
+	opacity: 0;
+}
+
+#tv {
+	position: absolute;
+	left: 0px;
+	background-image: url('/images/TV.gif');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 1049px;
+	height: 711px;
+}
+
+.portrait_mode {
+	position: absolute;
+	right: 0;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+
+	#tv {
+		position: absolute;
+		width: 1049px;
+		height: 711px;
+	}
+}
+
+.missing {
+	margin: auto;
+	position: relative;
+	top: 50%;
+	width: 193px;
+
+	a {
+		height: 63px;
+		position: relative;
+		top: -31px;
+	}
+
+	img {
+		border-width: 0px;
+	}
+}
+
+#unityPlayer {
+	background: url(checksitepopup.png) top no-repeat;
+	list-style-position: inside;
+	color: #000000;
+	margin: 100px;
+	padding-top: 5px;
+	vertical-align: middle;
+	cursor: default;
+	height: 253px;
+	width: 417px;
+	alignment-baseline: middle;
+}
+
+#anim,
+#port,
+#blog,
+#resume,
+#about,
+#back {
+	position: absolute;
+	z-index: 1;
+}
+
+#port,
+#blog,
+#resume,
+#about,
+#back {
+	height: 3%;
+	background-color: none;
+	cursor: pointer;
+}
+
+#anim {
+	top: 75px;
+	left: 65px;
+}
+
+#port {
+	top: 19%;
+	left: 16%;
+	width: 20%;
+}
+
+#blog {
+	top: 22%;
+	left: 16%;
+	width: 11%;
+}
+
+#resume {
+	top: 25%;
+	left: 16%;
+	width: 14%;
+}
+
+#about {
+	top: 28%;
+	left: 16%;
+	width: 18%;
+}
+
+#back {
+	top: 41%;
+	left: 16%;
+	width: 11%;
+}
+
+.te_dashboard {
+	.te_close_link {
+		top: 10px;
+		right: 5px;
+		opacity: 0.6;
+	}
+}
