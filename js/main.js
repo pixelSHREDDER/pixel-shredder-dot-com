@@ -8,7 +8,7 @@ $(function() {
 		if (isMobile) {
 			setOrientation();
 
-			$window.on('resize', function() {
+			$(window).resize(function() {
 				setOrientation();
 			});
 		};
