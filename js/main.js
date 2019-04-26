@@ -8,7 +8,7 @@ $(function() {
 		if (isMobile) {
 			setOrientation();
 
-			$(window).on('resize', function() {
+			$window.on('resize', function() {
 				setOrientation();
 			});
 		};
@@ -51,7 +51,7 @@ $(function() {
 
 	function getTopupData() {
 		var screenWidth = $(window).width();
-		return `type = iframe, width = ${(screenWidth * 0.575)}, height = ${(screenWidth * 0.40)}, effect = clip, x = ${(screenWidth * 0.10)}, y = ${(screenWidth * 0.095)}, overlayClose = 1`;
+		return `type = iframe, width = ${(screenWidth * 0.576)}, height = ${(screenWidth * 0.415)}, effect = clip, x = ${(screenWidth * 0.095)}, y = ${(screenWidth * 0.09)}, resizable = 0, overlayClose = 1`;
 	};
 
 	function doRedirect(url = '') {
@@ -62,9 +62,9 @@ $(function() {
 
 	function updateImage() {
 		if (!onMenu) {
-			$('#shinobi').attr('src', `http://www.pixel-shredder.com/images/ShinobiTV.gif?${new Date().getTime()}`);
+			$('#shinobi').attr('src', `https://www.pixel-shredder.com/images/ShinobiTV.gif?${new Date().getTime()}`);
 		} else {
-			$('#shinobi').attr('src', 'http://www.pixel-shredder.com/images/MenuTV.gif');
+			$('#shinobi').attr('src', 'https://www.pixel-shredder.com/images/MenuTV.gif');
 		};
 	};
 
@@ -72,10 +72,10 @@ $(function() {
 		if (onMenu) {
 			switch (id) {
 				case 'port':
-					doRedirect('http://www.pixel-shredder.com/port/dv.html');
+					doRedirect('https://www.pixel-shredder.com/port/');
 					break;
 				case 'blog':
-					doRedirect('http://www.pixel-shredder.com/blog/');
+					doRedirect('https://www.pixel-shredder.com/blog/');
 					break;
 				case 'back':
 					doRedirect();
