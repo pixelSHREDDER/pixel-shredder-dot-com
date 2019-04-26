@@ -15,6 +15,8 @@ $(function() {
 
 		$('#topup_resume').attr('toptions', getTopupData());
 		$('#topup_about').attr('toptions', getTopupData());
+		$('#topup_resume').hide();
+		$('#topup_about').hide();
 		animateIn();
 	};
 
@@ -22,13 +24,13 @@ $(function() {
 		return (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent));
 	};
 
-	function setOrientation(div = '.content') {
+	function setOrientation() {
 		if (screen.width > screen.height) {
-			$(div).addClass('landscape_mode');
-			$(div).removeClass('portrait_mode');
+			$('body').addClass('landscape_mode');
+			$('body').removeClass('portrait_mode');
 		} else {
-			$(div).addClass('portrait_mode');
-			$(div).removeClass('landscape_mode');
+			$('body').addClass('portrait_mode');
+			$('body').removeClass('landscape_mode');
 		}
 	};
 
@@ -106,7 +108,9 @@ $(function() {
 	});
 
 	$('#anim').click(function() {
-		onMenu = !onMenu;
+		$('#topup_resume').show();
+		$('#topup_about').show();
+		onMenu = true;
 		updateImage();
 	});
 

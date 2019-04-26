@@ -1,9 +1,9 @@
 body {
 	font-family: Trebuchet, Helvetica, Verdana, Arial, sans-serif;
 	font-weight: bold;
-	background-color: black;
+	background-color: #000;
 	background-size: cover;
-	color: white;
+	color: #fff;
 	text-align: center;
 }
 
@@ -51,7 +51,7 @@ a {
 	height: 711px;
 }
 
-.portrait_mode {
+.portrait_mode .content {
 	position: absolute;
 	right: 0;
 	-webkit-transform: rotate(90deg);
@@ -86,7 +86,7 @@ a {
 #unityPlayer {
 	background: url(checksitepopup.png) top no-repeat;
 	list-style-position: inside;
-	color: #000000;
+	color: #000;
 	margin: 100px;
 	padding-top: 5px;
 	vertical-align: middle;
@@ -162,4 +162,41 @@ a {
 
 iframe {
 	border-radius: 35px;
+}
+
+.portrait_mode #top_up {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+#rotate {
+	display: none;
+	position: absolute;
+	top: 2px;
+	left: 56px;
+	z-index: 9999;
+	color: #fff;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 24px;
+    text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	animation: blinker 1s linear infinite;
+
+	span {
+		font-family: Trebuchet, Helvetica, Verdana, Arial, sans-serif;
+		font-size: 50px;
+	}
+}
+
+.portrait_mode #rotate {
+	display: block;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
 }
